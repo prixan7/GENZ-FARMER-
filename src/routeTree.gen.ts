@@ -10,33 +10,206 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CalculatorRouteImport } from './routes/calculator'
+import { Route as CropDoctorRouteImport } from './routes/crop-doctor'
+import { Route as DashboardRouteImport } from './routes/dashboard'
+import { Route as EducationRouteImport } from './routes/education'
+import { Route as ExpertRouteImport } from './routes/expert'
+import { Route as JobsRouteImport } from './routes/jobs'
+import { Route as LoansRouteImport } from './routes/loans'
+import { Route as MarketplaceRouteImport } from './routes/marketplace'
+import { Route as PlannerRouteImport } from './routes/planner'
+import { Route as RecordsRouteImport } from './routes/records'
+import { Route as RentalsRouteImport } from './routes/rentals'
+import { Route as SchemesRouteImport } from './routes/schemes'
+import { Route as WeatherRouteImport } from './routes/weather'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CalculatorRoute = CalculatorRouteImport.update({
+  id: '/calculator',
+  path: '/calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CropDoctorRoute = CropDoctorRouteImport.update({
+  id: '/crop-doctor',
+  path: '/crop-doctor',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DashboardRoute = DashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EducationRoute = EducationRouteImport.update({
+  id: '/education',
+  path: '/education',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExpertRoute = ExpertRouteImport.update({
+  id: '/expert',
+  path: '/expert',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JobsRoute = JobsRouteImport.update({
+  id: '/jobs',
+  path: '/jobs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoansRoute = LoansRouteImport.update({
+  id: '/loans',
+  path: '/loans',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MarketplaceRoute = MarketplaceRouteImport.update({
+  id: '/marketplace',
+  path: '/marketplace',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlannerRoute = PlannerRouteImport.update({
+  id: '/planner',
+  path: '/planner',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RecordsRoute = RecordsRouteImport.update({
+  id: '/records',
+  path: '/records',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RentalsRoute = RentalsRouteImport.update({
+  id: '/rentals',
+  path: '/rentals',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SchemesRoute = SchemesRouteImport.update({
+  id: '/schemes',
+  path: '/schemes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WeatherRoute = WeatherRouteImport.update({
+  id: '/weather',
+  path: '/weather',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/calculator': typeof CalculatorRoute
+  '/crop-doctor': typeof CropDoctorRoute
+  '/dashboard': typeof DashboardRoute
+  '/education': typeof EducationRoute
+  '/expert': typeof ExpertRoute
+  '/jobs': typeof JobsRoute
+  '/loans': typeof LoansRoute
+  '/marketplace': typeof MarketplaceRoute
+  '/planner': typeof PlannerRoute
+  '/records': typeof RecordsRoute
+  '/rentals': typeof RentalsRoute
+  '/schemes': typeof SchemesRoute
+  '/weather': typeof WeatherRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/calculator': typeof CalculatorRoute
+  '/crop-doctor': typeof CropDoctorRoute
+  '/dashboard': typeof DashboardRoute
+  '/education': typeof EducationRoute
+  '/expert': typeof ExpertRoute
+  '/jobs': typeof JobsRoute
+  '/loans': typeof LoansRoute
+  '/marketplace': typeof MarketplaceRoute
+  '/planner': typeof PlannerRoute
+  '/records': typeof RecordsRoute
+  '/rentals': typeof RentalsRoute
+  '/schemes': typeof SchemesRoute
+  '/weather': typeof WeatherRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/calculator': typeof CalculatorRoute
+  '/crop-doctor': typeof CropDoctorRoute
+  '/dashboard': typeof DashboardRoute
+  '/education': typeof EducationRoute
+  '/expert': typeof ExpertRoute
+  '/jobs': typeof JobsRoute
+  '/loans': typeof LoansRoute
+  '/marketplace': typeof MarketplaceRoute
+  '/planner': typeof PlannerRoute
+  '/records': typeof RecordsRoute
+  '/rentals': typeof RentalsRoute
+  '/schemes': typeof SchemesRoute
+  '/weather': typeof WeatherRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/calculator'
+    | '/crop-doctor'
+    | '/dashboard'
+    | '/education'
+    | '/expert'
+    | '/jobs'
+    | '/loans'
+    | '/marketplace'
+    | '/planner'
+    | '/records'
+    | '/rentals'
+    | '/schemes'
+    | '/weather'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/calculator'
+    | '/crop-doctor'
+    | '/dashboard'
+    | '/education'
+    | '/expert'
+    | '/jobs'
+    | '/loans'
+    | '/marketplace'
+    | '/planner'
+    | '/records'
+    | '/rentals'
+    | '/schemes'
+    | '/weather'
+  id:
+    | '__root__'
+    | '/'
+    | '/calculator'
+    | '/crop-doctor'
+    | '/dashboard'
+    | '/education'
+    | '/expert'
+    | '/jobs'
+    | '/loans'
+    | '/marketplace'
+    | '/planner'
+    | '/records'
+    | '/rentals'
+    | '/schemes'
+    | '/weather'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CalculatorRoute: typeof CalculatorRoute
+  CropDoctorRoute: typeof CropDoctorRoute
+  DashboardRoute: typeof DashboardRoute
+  EducationRoute: typeof EducationRoute
+  ExpertRoute: typeof ExpertRoute
+  JobsRoute: typeof JobsRoute
+  LoansRoute: typeof LoansRoute
+  MarketplaceRoute: typeof MarketplaceRoute
+  PlannerRoute: typeof PlannerRoute
+  RecordsRoute: typeof RecordsRoute
+  RentalsRoute: typeof RentalsRoute
+  SchemesRoute: typeof SchemesRoute
+  WeatherRoute: typeof WeatherRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +221,115 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/calculator': {
+      id: '/calculator'
+      path: '/calculator'
+      fullPath: '/calculator'
+      preLoaderRoute: typeof CalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/crop-doctor': {
+      id: '/crop-doctor'
+      path: '/crop-doctor'
+      fullPath: '/crop-doctor'
+      preLoaderRoute: typeof CropDoctorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dashboard': {
+      id: '/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/education': {
+      id: '/education'
+      path: '/education'
+      fullPath: '/education'
+      preLoaderRoute: typeof EducationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/expert': {
+      id: '/expert'
+      path: '/expert'
+      fullPath: '/expert'
+      preLoaderRoute: typeof ExpertRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/jobs': {
+      id: '/jobs'
+      path: '/jobs'
+      fullPath: '/jobs'
+      preLoaderRoute: typeof JobsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/loans': {
+      id: '/loans'
+      path: '/loans'
+      fullPath: '/loans'
+      preLoaderRoute: typeof LoansRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/marketplace': {
+      id: '/marketplace'
+      path: '/marketplace'
+      fullPath: '/marketplace'
+      preLoaderRoute: typeof MarketplaceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/planner': {
+      id: '/planner'
+      path: '/planner'
+      fullPath: '/planner'
+      preLoaderRoute: typeof PlannerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/records': {
+      id: '/records'
+      path: '/records'
+      fullPath: '/records'
+      preLoaderRoute: typeof RecordsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rentals': {
+      id: '/rentals'
+      path: '/rentals'
+      fullPath: '/rentals'
+      preLoaderRoute: typeof RentalsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/schemes': {
+      id: '/schemes'
+      path: '/schemes'
+      fullPath: '/schemes'
+      preLoaderRoute: typeof SchemesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/weather': {
+      id: '/weather'
+      path: '/weather'
+      fullPath: '/weather'
+      preLoaderRoute: typeof WeatherRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CalculatorRoute: CalculatorRoute,
+  CropDoctorRoute: CropDoctorRoute,
+  DashboardRoute: DashboardRoute,
+  EducationRoute: EducationRoute,
+  ExpertRoute: ExpertRoute,
+  JobsRoute: JobsRoute,
+  LoansRoute: LoansRoute,
+  MarketplaceRoute: MarketplaceRoute,
+  PlannerRoute: PlannerRoute,
+  RecordsRoute: RecordsRoute,
+  RentalsRoute: RentalsRoute,
+  SchemesRoute: SchemesRoute,
+  WeatherRoute: WeatherRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
