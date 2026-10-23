@@ -161,4 +161,4 @@ export const moduleLinks = [
   { label: "Farm records", path: "/records" },
   { label: "Learn & community", path: "/education" },
   { label: "Ask an expert", path: "/expert" },
-];
+] as const;
